@@ -11,3 +11,8 @@ app.get("/", (req, res) => {
     else res.end(template);
   });
 });
+
+app.listen(PORT, (err) => {
+  if (err) throw err;
+  else console.log("Server is running");
+});
