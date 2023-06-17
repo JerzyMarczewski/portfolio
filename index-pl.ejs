@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a class="option" href="#about">O MNIE</a>
+      <a class="option">PROJEKTY</a>
+      <a class="option">KONTAKT</a>
+      <div class="pill">
+        <a id="pl" class="selected" href="/pl">PL</a>
+        <a id="en" href="/en">EN</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="heroText">
+        <p>Cześć, nazywam się</p>
+        <h1>Jerzy <br />Marczewski</h1>
+      </div>
+      <img src="img/profile.png" alt="profile" />
+    </div>
+    <div id="about">
+      <h1>O MNIE</h1>
+      <p>
+        Mam na imię Jurek i jestem studentem trzeciego roku informatyki w Szkole
+        Głównej Gospodarstwa Wiejskiego. Interesuję się web developmentem i
+        rozwijam się w tym obszarze we własnym zakresie od ponad dwóch lat.
+        <br /><br />
+        Technologie, których używam w moich projektach to: React, Redux,
+        Node.js, Express.js, MongoDB, Mongoose, TypeScript, JavaScript, HTML i
+        CSS.
+        <br /><br />
+        W wolnych chwilach lubię gotować, jeździć na rowerze i niedawno
+        rozpocząłem również rozwijanie umiejętności w dziedzinie Machine
+        Learningu, nad którym pracuję w ramach mojej pracy inżynierskiej.
+      </p>
+    </div>
+    <div id="projects">
+      <h1>PROJEKTY</h1>
+      <div class="project">
+        <h2>MERN-REMINDERS</h2>
+        <div class="previewWithDescription">
+          <img src="img/project1-preview.png" alt="project 1 preview" />
+          <div class="description">
+            <p>
+              Aplikacja webowa inspirowana aplikacją apple REMINDERS.
+              Wykorzystuje system logowania użytkowników, których zapisuje w
+              bazie danych i szyfruje ich hasła. Aplikacja służy do tworzenia
+              list, które są zapisywane na serwerze, dzięki czemu można je
+              aktywować z różnych urządzeń.
+              <br /><br />
+              Wykorzystane technologie: react, node, express, mongoDB, mongoose,
+              javascript, html, css.
+            </p>
+            <a
+              class="previewButton"
+              href="https://github.com/JerzyMarczewski/MERN-Reminders"
+              >PODGLĄD</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <h1>KONTAKT</h1>
+    </div>
+  </body>
+</html>
