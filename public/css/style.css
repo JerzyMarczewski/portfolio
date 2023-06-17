@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #FFBD59;
+  --navbar-mobile-height: 4rem;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  
+  width: 100vw;
+  height: 4rem;
+  padding: 1rem 2rem ;
+  background-color: var(--yellow);
+
+  font-size: 0.75rem;
+}
+
+.navbar>.option {
+  margin: 0 0.5rem;
+}
+
+.hero {
+  height: calc(100vh - var(--navbar-mobile-height));
+  background-color: var(--yellow);
+}
+
+.pill {
+  display: flex;
+  justify-content: center;
+
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.pill a#pl,
+.pill a#en {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  
+  margin: 0;
+  padding: 0.25rem;
+}
+
+.pill a#pl {
+  border-radius: 20px 0 0 20px;
+  padding-left: 0.5rem;
+}
+
+.pill a#en {
+  border-radius: 0 20px 20px 0;
+  padding-right: 0.5rem;
+}
+
+.pill a#pl.selected,
+.pill a#en.selected {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.hero .heroText {
+  padding: 3rem;
+}
+
+.hero .heroText h1 {
+  font-size: 2.5rem;
+}
+
+#about,
+#projects,
+#contact {
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+#about > h1,
+#projects > h1,
+#contact > h1 {
+  color: var(--yellow);
+  padding: 0 0 1rem 0;
+}
+
+.previewWithDescription  img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.previewButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 2rem;
+  border: 1px solid #000000;
+}
