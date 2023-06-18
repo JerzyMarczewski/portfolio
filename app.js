@@ -15,8 +15,6 @@ app.get("/", (req, res) => {
 });
 
 app.get("/:lang", (req, res) => {
-  console.log(req.params);
-
   if (req.params.lang !== "pl" && req.params.lang !== "en") res.redirect("/pl");
   else if (req.params.lang === "pl") {
     ejs.renderFile("index-pl.ejs", {}, {}, (err, template) => {
