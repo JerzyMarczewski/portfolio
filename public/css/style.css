@@ -32,6 +32,11 @@ body {
   font-size: 0.75rem;
 }
 
+html:not([data-scroll='0']) .navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #000000;
+}
+
 .navbar>.option {
   margin: 0 0.5rem;
 }
@@ -61,6 +66,12 @@ a {
   padding: 0.25rem;
 }
 
+html:not([data-scroll='0']) .pill a#pl,
+html:not([data-scroll='0']) .pill a#en {
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+}
+
 .pill a#pl {
   border-radius: 20px 0 0 20px;
   padding-left: 0.5rem;
@@ -74,6 +85,12 @@ a {
 .pill a#pl.selected,
 .pill a#en.selected {
   background-color: #ffffff;
+  color: #000000;
+}
+
+html:not([data-scroll='0']) .pill a#pl.selected,
+html:not([data-scroll='0']) .pill a#en.selected {
+  background-color: var(--yellow);
   color: #000000;
 }
 
@@ -121,4 +138,14 @@ a {
   padding: 1rem 2rem;
   margin: 2rem;
   border: 1px solid #000000;
+}
+
+.contactOption {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contactOption > * {
+  margin: 0 0.5rem;
 }

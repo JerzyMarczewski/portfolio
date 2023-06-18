@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-scroll="0">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,8 +15,8 @@
   <body>
     <nav class="navbar">
       <a class="option" href="#about">O MNIE</a>
-      <a class="option">PROJEKTY</a>
-      <a class="option">KONTAKT</a>
+      <a class="option" href="#projects">PROJEKTY</a>
+      <a class="option" href="#contact">KONTAKT</a>
       <div class="pill">
         <a id="pl" class="selected" href="/pl">PL</a>
         <a id="en" href="/en">EN</a>
@@ -73,6 +73,26 @@
     </div>
     <div id="contact">
       <h1>KONTAKT</h1>
+      <a
+        class="contactOption"
+        href="https://www.linkedin.com/in/jerzy-marczewski-83400926b/"
+        ><iconify-icon icon="skill-icons:linkedin"></iconify-icon>
+        <p>Jerzy Marczewski</p></a
+      >
+      <a class="contactOption" href="https://github.com/JerzyMarczewski">
+        <iconify-icon icon="devicon:github"></iconify-icon>
+        <p>JerzyMarczewski</p>
+      </a>
+      <a class="contactOption" href="mailto:jerzy.marczewski2@gmail.com">
+        <iconify-icon icon="uiw:mail"></iconify-icon>
+        <p>jerzy.marczewski2@gmail.com</p>
+      </a>
     </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+      document.addEventListener("scroll", () => {
+        document.documentElement.dataset.scroll = window.scrollY;
+      });
+    </script>
   </body>
 </html>
