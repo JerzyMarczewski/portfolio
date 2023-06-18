@@ -10,9 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap"
       rel="stylesheet"
     />
+    <title>Jerzy Marczewski</title>
   </head>
 
   <body>
+    <div class="cookiesWindowContainer">
+      <div class="cookiesWindow">
+        <p>
+          Ta strona korzysta z plików cookies, które poprawiają doświadczenie
+          użytkownika. Kontynuując korzystanie z naszej strony, wyrażasz zgodę
+          na używanie plików cookies.
+        </p>
+        <div class="cookiesButton">Akceptuje</div>
+      </div>
+    </div>
     <nav class="navbar">
       <a class="option" href="#about">O MNIE</a>
       <a class="option" href="#projects">PROJEKTY</a>
@@ -142,22 +153,31 @@
       <a
         class="contactOption"
         href="https://www.linkedin.com/in/jerzy-marczewski-83400926b/"
-        ><iconify-icon icon="skill-icons:linkedin"></iconify-icon>
+        ><iconify-icon icon="skill-icons:linkedin" width="40"></iconify-icon>
         <p>Jerzy Marczewski</p></a
       >
       <a class="contactOption" href="https://github.com/JerzyMarczewski">
-        <iconify-icon icon="devicon:github"></iconify-icon>
+        <iconify-icon icon="devicon:github" width="40"></iconify-icon>
         <p>JerzyMarczewski</p>
       </a>
       <a class="contactOption" href="mailto:jerzy.marczewski2@gmail.com">
-        <iconify-icon icon="uiw:mail"></iconify-icon>
+        <iconify-icon icon="uiw:mail" width="40"></iconify-icon>
         <p>jerzy.marczewski2@gmail.com</p>
       </a>
     </div>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script>
+      // Kod służy jedynie do stylowania strony
+      const cookiesWindow = document.querySelector(".cookiesWindowContainer");
+      const cookiesButton = document.querySelector(".cookiesButton");
+
       document.addEventListener("scroll", () => {
         document.documentElement.dataset.scroll = window.scrollY;
+      });
+
+      cookiesButton.addEventListener("click", () => {
+        console.log("clicked");
+        cookiesWindow.remove();
       });
     </script>
   </body>
