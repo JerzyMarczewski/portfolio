@@ -1,12 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-scroll="0">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>George Marczewski</title>
   </head>
 
   <body>
-    <nav class="navbar"><a href="/pl">PL</a></nav>
+    <div class="cookiesWindowContainer">
+      <div class="cookiesWindow">
+        <p>
+          This website uses cookies to enhance the user experience. By
+          continuing to use our site, you consent to the use of cookies.
+        </p>
+        <div class="cookiesButton">Accept</div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <a class="option" href="#about">ABOUT</a>
+      <a class="option" href="#projects">PROJECTS</a>
+      <a class="option" href="#contact">CONTACT</a>
+      <div class="pill">
+        <a id="pl" href="/pl">PL</a>
+        <a id="en" class="selected" href="/en">EN</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="heroText">
+        <p>Hi, my name is</p>
+        <h1>George <br />Marczewski</h1>
+      </div>
+      <img src="img/profile.png" alt="profile" />
+    </div>
+    <div id="about">
+      <h1>ABOUT</h1>
+      <p>
+        My name is George, and I am a third-year student of Computer Science at
+        the Warsaw University of Life Sciences. I am interested in web
+        development and have been self-learning and expanding my skills in this
+        area for over two years.
+        <br /><br />
+        The technologies I use in my projects include React, Redux, Node.js,
+        Express.js, MongoDB, Mongoose, TypeScript, JavaScript, HTML, and CSS.
+        <br /><br />
+        In my free time, I enjoy cooking, cycling, and recently, I have also
+        started developing skills in the field of Machine Learning, which I am
+        working on as part of my engineering thesis.
+      </p>
+    </div>
+    <div id="projects">
+      <h1>PROJECTS</h1>
+      <div class="project">
+        <h2>MERN-REMINDERS</h2>
+        <div class="previewWithDescription">
+          <img src="img/project1-preview.png" alt="project 1 preview" />
+          <div class="description">
+            <p>
+              Web application inspired by the Apple REMINDERS app. It utilizes a
+              user login system, storing their information in a database and
+              encrypting their passwords. The application is used for creating
+              lists that are saved on the server, allowing them to be accessed
+              from different devices.
+              <br /><br />
+              Technologies used: React, Node, Express, MongoDB, Mongoose,
+              JavaScript, HTML, CSS.
+            </p>
+            <a
+              class="previewButton"
+              href="https://github.com/JerzyMarczewski/MERN-Reminders"
+              >PREVIEW</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <h2>Viaggio</h2>
+        <div class="previewWithDescription">
+          <img src="img/project2-preview.png" alt="project 2 preview" />
+          <div class="description">
+            <p>
+              A responsive website for a sample travel agency.
+              <br /><br />
+              Technologies used: React, JavaScript, HTML, CSS.
+            </p>
+            <a
+              class="previewButton"
+              href="https://github.com/JerzyMarczewski/react-travel-agency"
+              >PREVIEW</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <h2>Music Streamer</h2>
+          <div class="previewWithDescription">
+            <img src="img/project3-preview.png" alt="project 3 preview" />
+            <div class="description">
+              <p>
+                The project that I created together with my colleagues from
+                studies is a web application for playing songs stored on the
+                server and creating playlists, similar to Spotify. The
+                application utilizes a login system and song saving
+                functionality, allowing users to access it from different
+                devices without losing data.
+                <br /><br />
+                Technologies used: React, Redux, Supabase, TypeScript,
+                JavaScript, HTML, CSS.
+              </p>
+              <a
+                class="previewButton"
+                href="https://github.com/wojtek0123/music-streamer"
+                >PREVIEW</a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <h2>Movie searcher</h2>
+            <div class="previewWithDescription">
+              <img src="img/project4-preview.png" alt="project 4 preview" />
+              <div class="description">
+                <p>
+                  The project that I created together with my colleagues from
+                  studies is a web application for searching movies and related
+                  data using the TMDB API. The application utilizes a login
+                  system and data saving functionality, allowing users to access
+                  it from different devices without losing data.
+                  <br /><br />
+                  Technologies used: React, Supabase, TypeScript, JavaScript,
+                  HTML, CSS.
+                </p>
+                <a
+                  class="previewButton"
+                  href="https://github.com/wojtek0123/music-streamer"
+                  >PREVIEW</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <h1>CONTACT</h1>
+      <a
+        class="contactOption"
+        href="https://www.linkedin.com/in/jerzy-marczewski-83400926b/"
+        ><iconify-icon icon="skill-icons:linkedin" width="40"></iconify-icon>
+        <p>Jerzy Marczewski</p></a
+      >
+      <a class="contactOption" href="https://github.com/JerzyMarczewski">
+        <iconify-icon icon="devicon:github" width="40"></iconify-icon>
+        <p>JerzyMarczewski</p>
+      </a>
+      <a class="contactOption" href="mailto:jerzy.marczewski2@gmail.com">
+        <iconify-icon icon="uiw:mail" width="40"></iconify-icon>
+        <p>jerzy.marczewski2@gmail.com</p>
+      </a>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+      // Kod służy jedynie do stylowania strony
+      const cookiesWindow = document.querySelector(".cookiesWindowContainer");
+      const cookiesButton = document.querySelector(".cookiesButton");
+
+      document.addEventListener("scroll", () => {
+        document.documentElement.dataset.scroll = window.scrollY;
+      });
+
+      cookiesButton.addEventListener("click", () => {
+        console.log("clicked");
+        cookiesWindow.remove();
+      });
+    </script>
   </body>
 </html>
