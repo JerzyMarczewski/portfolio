@@ -14,29 +14,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.cookiesWindowContainer {
-  z-index: 20;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.cookiesWindow {
-  width: 50%;
-  max-width: 70vw;
-  padding: 3rem 2rem;
-  background-color: #ffffff;
-}
-
 .navbar {
   position: sticky;
   top: 0;
